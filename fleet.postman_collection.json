@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "7063a7db-bae4-4399-9b95-3f3b09b15a1f",
+		"name": "fleet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20273212"
+	},
+	"item": [
+		{
+			"name": "booking  Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n       \"Fname\":\"Saqlane\",\r\n    \"Lname\": \"khan\",\r\n    \"Phone\": 8310814280,\r\n    \"EmailId\":\"saqlane@gmail.com\",\r\n    \"vehicle_type\": \"xuv\",\r\n    \"From_address\": \"boss\",\r\n    \"To_address\": \"dost\",\r\n    \"booking_date\":\"30-05-2022 \",\r\n    \"booking_time\": \"06:50 \",\r\n    \"passenger_count\":2\r\n\r\n   }  \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/create-booking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-booking",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n       \"Fname\":\"pgpgpgjghjggjghan\",\r\n    \"Lname\": \"Khmkjkhkjkjan\",\r\n    \"Phone\": 1234567890,\r\n    \"EmailId\":\"khansab@gmail.com\",\r\n    \"vehicle_type\": \"sedan\",\r\n    \"From_address\": \"delhi\",\r\n    \"To_address\": \"ckmckmblr\",\r\n    \"booking_date\":\"12-01-2022\",\r\n    \"booking_time\": \"12-01-2022\",\r\n    \"passenger_count\":1\r\n\r\n   }  "
+				},
+				"url": {
+					"raw": "localhost:3000/updateBooking/6285f1630d67fc3e09ef7db9",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateBooking",
+						"6285f1630d67fc3e09ef7db9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vehicle register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mercedes\",\r\n    \"Type\":\"SUV XL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/vehileRegister",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"vehileRegister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/get-all-bookings?_id=628b532102052a31604ccb5a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get-all-bookings"
+					],
+					"query": [
+						{
+							"key": "_id",
+							"value": "628b532102052a31604ccb5a"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
